@@ -1,0 +1,62 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "location": {
+            "value": "centralus"
+        },
+        "networkInterfaceName": {
+            "value": "test"
+        },
+        "networkSecurityGroupName": {
+            "value": "test-nsg"
+        },
+        "networkSecurityGroupRules": {
+            "value": [
+                {
+                    "name": "SSH",
+                    "properties": {
+                        "priority": 300,
+                        "protocol": "TCP",
+                        "access": "Allow",
+                        "direction": "Inbound",
+                        "sourceAddressPrefix": "*",
+                        "sourcePortRange": "*",
+                        "destinationAddressPrefix": "*",
+                        "destinationPortRange": "22"
+                    }
+                }
+            ]
+        },
+        "subnetName": {
+            "value": "Subnet"
+        },
+        "virtualNetworkId": {
+            "value": "/subscriptions/15270012-a4ec-4434-925c-2d6ce0e83c2b/resourceGroups/AzureDevops/providers/Microsoft.Network/virtualNetworks/vNet"
+        },
+        "virtualMachineName": {
+            "value": "demo"
+        },
+        "virtualMachineRG": {
+            "value": "Demo"
+        },
+        "osDiskType": {
+            "value": "Premium_LRS"
+        },
+        "virtualMachineSize": {
+            "value": "Standard_DS1_v2"
+        },
+        "adminUsername": {
+            "value": "test123"
+        },
+        "adminPassword": {
+            "value": null
+        },
+        "diagnosticsStorageAccountName": {
+            "value": "azuredevopsdiag422"
+        },
+        "diagnosticsStorageAccountId": {
+            "value": "/subscriptions/15270012-a4ec-4434-925c-2d6ce0e83c2b/resourceGroups/AzureDevops/providers/Microsoft.Storage/storageAccounts/azuredevopsdiag422"
+        }
+    }
+}

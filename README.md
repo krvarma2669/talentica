@@ -1,1 +1,1 @@
-# talentica
+# VMSS WITH INTERNAL LOADBALANCER

@@ -64,8 +64,8 @@
         "adminPassword": {
             "value": "Rajeshvarma@123"
         },
-		"commandToExecute": {
-      "value": "sh custom.sh"
+        "commandToExecute": {
+      "value": "sh scipts.sh"
     },
         "diagnosticsStorageAccountName": {
             "value": "rajeshdiag489"

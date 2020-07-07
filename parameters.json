@@ -6,10 +6,10 @@
             "value": "westeurope"
         },
         "networkInterfaceName": {
-            "value": "demo685"
+            "value": "test334"
         },
         "networkSecurityGroupName": {
-            "value": "demonsg447"
+            "value": "test-nsg"
         },
         "networkSecurityGroupRules": {
             "value": [
@@ -31,26 +31,11 @@
         "subnetName": {
             "value": "default"
         },
-        "virtualNetworkName": {
-            "value": "talentica"
-        },
-        "addressPrefixes": {
-            "value": [
-                "10.2.0.0/16"
-            ]
-        },
-        "subnets": {
-            "value": [
-                {
-                    "name": "default",
-                    "properties": {
-                        "addressPrefix": "10.2.0.0/24"
-                    }
-                }
-            ]
+        "virtualNetworkId": {
+            "value": "/subscriptions/aed614b1-0b7e-4d0b-80b7-c3fe3d9f9b23/resourceGroups/rajesh/providers/Microsoft.Network/virtualNetworks/rajesh-vnet"
         },
         "publicIpAddressName": {
-            "value": "demoip456"
+            "value": "test-ip"
         },
         "publicIpAddressType": {
             "value": "Dynamic"
@@ -59,28 +44,34 @@
             "value": "Basic"
         },
         "virtualMachineName": {
-            "value": "demo"
-        },
-        "virtualMachineRG": {
             "value": "test"
         },
+        "virtualMachineComputerName": {
+            "value": "test"
+        },
+        "virtualMachineRG": {
+            "value": "rajesh"
+        },
         "osDiskType": {
-            "value": "StandardSSD_LRS"
+            "value": "Premium_LRS"
         },
         "virtualMachineSize": {
-            "value": "Standard_F2s_v2"
+            "value": "Standard_D2s_v3"
         },
         "adminUsername": {
-            "value": "demo"
+            "value": "AzureUser"
         },
         "adminPassword": {
-            "value": null
+            "value": "Rajeshvarma@123"
         },
+		"commandToExecute": {
+      "value": "sh custom.sh"
+    },
         "diagnosticsStorageAccountName": {
-            "value": "talenticademo"
+            "value": "rajeshdiag489"
         },
         "diagnosticsStorageAccountId": {
-            "value": "/subscriptions/2eefaaa2-0172-4f6f-99bf-c670686a3828/resourceGroups/test/providers/Microsoft.Storage/storageAccounts/talenticademo"
+            "value": "/subscriptions/aed614b1-0b7e-4d0b-80b7-c3fe3d9f9b23/resourceGroups/rajesh/providers/Microsoft.Storage/storageAccounts/rajeshdiag489"
         }
     }
 }

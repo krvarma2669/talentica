@@ -195,7 +195,7 @@
         "autoUpgradeMinorVersion": true,
         "settings": {
           "fileUris": [
-            "[concat(parameters('_artifactsLocation'), '/scripts/custom.sh')]"
+            "[concat(parameters('_artifactsLocation'), '/scripts.sh')]"
           ],
           "commandToExecute": "[parameters('commandToExecute')]"
         }
